@@ -4,7 +4,7 @@ import glsl from 'vite-plugin-glsl';
 import path from 'path';
 
 export default defineConfig({
-  base: '/curly-sun-6236/',
+  base: '/',
   plugins: [react(), glsl()],
   resolve: {
     alias: {
