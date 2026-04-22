@@ -30,7 +30,7 @@ const TRAIL_OPACITY = 0.3;
  * - Max 20 trail points, points older than 800ms fade out
  * - Main dot: radius 6px, opacity 0.8
  * - Trail dots: progressively smaller, opacity 0.3
- * - Color: rgba(10,10,10,0.8) main, rgba(10,10,10,0.3) trail
+ * - Color: rgba(201,48,44,0.8) main, rgba(201,48,44,0.3) trail
  */
 export function updateInkTrail(
   prevState: InkTrailState,
@@ -79,7 +79,7 @@ export function drawInkTrail(
     if (mainPoint) {
       ctx.beginPath();
       ctx.arc(mainPoint.x, mainPoint.y, MAIN_DOT_RADIUS, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(10, 10, 10, ${MAIN_DOT_OPACITY})`;
+      ctx.fillStyle = `rgba(201, 48, 44, ${MAIN_DOT_OPACITY})`;
       ctx.fill();
     }
     return;
@@ -98,7 +98,7 @@ export function drawInkTrail(
 
     ctx.beginPath();
     ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(10, 10, 10, ${opacity})`;
+    ctx.fillStyle = `rgba(201, 48, 44, ${opacity})`;
     ctx.fill();
   }
 
@@ -107,7 +107,7 @@ export function drawInkTrail(
   if (mainPoint) {
     ctx.beginPath();
     ctx.arc(mainPoint.x, mainPoint.y, MAIN_DOT_RADIUS, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(10, 10, 10, ${MAIN_DOT_OPACITY})`;
+    ctx.fillStyle = `rgba(201, 48, 44, ${MAIN_DOT_OPACITY})`;
     ctx.fill();
   }
 }
