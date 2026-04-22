@@ -73,6 +73,9 @@ export default function Hero() {
 
   // ===== 三级降级渲染 =====
 
+  // Hero 底图 URL（Unsplash 免费商用 — 暗色调红色烟雾）
+  const heroBgUrl = 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80';
+
   // Fallback: CSS 渐变 + CSS animation 模拟烟雾
   if (deviceTier === 'fallback') {
     return (
@@ -81,6 +84,16 @@ export default function Hero() {
         className="relative w-full h-screen overflow-hidden"
         aria-label="Hero section"
       >
+        {/* 底图层 — 低透明度 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${heroBgUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.15,
+          }}
+        />
         {/* CSS 烟雾模拟 */}
         <div
           className="absolute inset-0"
@@ -89,7 +102,7 @@ export default function Hero() {
               radial-gradient(ellipse 60% 50% at 35% 80%, rgba(201, 48, 44, 0.15) 0%, transparent 70%),
               radial-gradient(ellipse 40% 60% at 40% 70%, rgba(139, 26, 26, 0.1) 0%, transparent 60%),
               radial-gradient(ellipse 50% 40% at 50% 90%, rgba(201, 48, 44, 0.08) 0%, transparent 50%),
-              #0A0A0A
+              transparent
             `,
             animation: 'smokeFallback 8s ease-in-out infinite',
           }}
@@ -125,8 +138,20 @@ export default function Hero() {
     <section
       ref={heroRef}
       className="relative w-full h-screen overflow-hidden"
+      style={{ backgroundColor: '#0A0A0A' }}
       aria-label="Hero section"
     >
+      {/* 底图层 — 低透明度 */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${heroBgUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.12,
+        }}
+      />
+
       {/* WebGL 场景 */}
       <HeroScene
         deviceTier={deviceTier}
