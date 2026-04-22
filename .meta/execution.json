@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "0.2.0",
+  "feature": "lina-perfume-portfolio",
+  "createdAt": "2026-04-22T02:19:09.048Z",
+  "updatedAt": "2026-04-22T05:58:12.807Z",
+  "status": "running",
+  "parameters": {
+    "skipUI": false,
+    "skipDeploy": false,
+    "quick": false,
+    "hitlLevel": "auto",
+    "roles": "full",
+    "pipelinePack": "default",
+    "pipelinePackVersion": "1.0.0",
+    "enabledStages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "enabledGates": [
+      "gate0",
+      "gate1",
+      "gate2"
+    ],
+    "activeAgents": [
+      "boss-pm",
+      "boss-architect",
+      "boss-ui-designer",
+      "boss-tech-lead",
+      "boss-scrum-master",
+      "boss-frontend",
+      "boss-backend",
+      "boss-qa",
+      "boss-devops"
+    ],
+    "packConfig": {
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "roles": "full",
+      "agents": [
+        "boss-pm",
+        "boss-architect",
+        "boss-ui-designer",
+        "boss-tech-lead",
+        "boss-scrum-master",
+        "boss-frontend",
+        "boss-backend",
+        "boss-qa",
+        "boss-devops"
+      ],
+      "gates": [
+        "gate0",
+        "gate1",
+        "gate2"
+      ],
+      "agentStages": {
+        "boss-pm": 1,
+        "boss-architect": 1,
+        "boss-ui-designer": 1,
+        "boss-tech-lead": 2,
+        "boss-scrum-master": 2,
+        "boss-frontend": 3,
+        "boss-backend": 3,
+        "boss-qa": 3,
+        "boss-devops": 4
+      }
+    },
+    "agentStages": {
+      "boss-pm": 1,
+      "boss-architect": 1,
+      "boss-ui-designer": 1,
+      "boss-tech-lead": 2,
+      "boss-scrum-master": 2,
+      "boss-frontend": 3,
+      "boss-backend": 3,
+      "boss-qa": 3,
+      "boss-devops": 4
+    }
+  },
+  "stages": {
+    "1": {
+      "name": "planning",
+      "status": "completed",
+      "startTime": "2026-04-22T02:21:25.521Z",
+      "endTime": "2026-04-22T02:35:14.404Z",
+      "retryCount": 0,
+      "maxRetries": 2,
+      "failureReason": null,
+      "artifacts": [
+        "prd.md",
+        "architecture.md",
+        "ui-spec.md"
+      ],
+      "gateResults": {}
+    },
+    "2": {
+      "name": "review",
+      "status": "completed",
+      "startTime": "2026-04-22T02:39:09.188Z",
+      "endTime": "2026-04-22T03:35:26.782Z",
+      "retryCount": 0,
+      "maxRetries": 2,
+      "failureReason": null,
+      "artifacts": [
+        "tech-review.md",
+        "tasks.md"
+      ],
+      "gateResults": {}
+    },
+    "3": {
+      "name": "development",
+      "status": "completed",
+      "startTime": "2026-04-22T04:32:06.123Z",
+      "endTime": "2026-04-22T04:57:32.946Z",
+      "retryCount": 0,
+      "maxRetries": 2,
+      "failureReason": null,
+      "artifacts": [
+        "code",
+        "qa-report.md"
+      ],
+      "gateResults": {
+        "gate0": {
+          "passed": true,
+          "executedAt": "2026-04-22T04:57:16.736Z",
+          "checks": [
+            "[",
+            "{",
+            "\"name\": \"typescript-compile\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：无 tsconfig.json\"",
+            "},",
+            "{",
+            "\"name\": \"lint\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：无 Lint 配置\"",
+            "},",
+            "{",
+            "\"name\": \"dependency-audit\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：无 package.json\"",
+            "}",
+            "]",
+            "\u001b[0;34m[GATE0]\u001b[0m Gate 0: 代码质量检查",
+            "\u001b[0;34m[GATE0]\u001b[0m ========================",
+            "\u001b[0;34m[GATE0]\u001b[0m 跳过 TypeScript 检查（未检测到 tsconfig.json）",
+            "\u001b[0;34m[GATE0]\u001b[0m 跳过 Lint 检查（未检测到 Lint 配置）"
+          ]
+        },
+        "gate1": {
+          "passed": true,
+          "executedAt": "2026-04-22T04:57:16.918Z",
+          "checks": [
+            "[",
+            "{",
+            "\"name\": \"unit-tests\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：未检测到测试框架\"",
+            "},",
+            "{",
+            "\"name\": \"coverage\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：未检测到测试框架\"",
+            "},",
+            "{",
+            "\"name\": \"e2e-tests\",",
+            "\"passed\": true,",
+            "\"detail\": \"跳过：未检测到测试框架\"",
+            "}",
+            "]",
+            "\u001b[0;34m[GATE1]\u001b[0m Gate 1: 测试门禁",
+            "\u001b[0;34m[GATE1]\u001b[0m ========================",
+            "\u001b[0;34m[GATE1]\u001b[0m 未检测到测试框架，跳过测试门禁"
+          ]
+        }
+      }
+    },
+    "4": {
+      "name": "deployment",
+      "status": "running",
+      "startTime": "2026-04-22T05:58:12.807Z",
+      "endTime": null,
+      "retryCount": 0,
+      "maxRetries": 2,
+      "failureReason": null,
+      "artifacts": [],
+      "gateResults": {}
+    }
+  },
+  "qualityGates": {
+    "gate0": {
+      "status": "completed",
+      "passed": true,
+      "checks": [
+        "[",
+        "{",
+        "\"name\": \"typescript-compile\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：无 tsconfig.json\"",
+        "},",
+        "{",
+        "\"name\": \"lint\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：无 Lint 配置\"",
+        "},",
+        "{",
+        "\"name\": \"dependency-audit\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：无 package.json\"",
+        "}",
+        "]",
+        "\u001b[0;34m[GATE0]\u001b[0m Gate 0: 代码质量检查",
+        "\u001b[0;34m[GATE0]\u001b[0m ========================",
+        "\u001b[0;34m[GATE0]\u001b[0m 跳过 TypeScript 检查（未检测到 tsconfig.json）",
+        "\u001b[0;34m[GATE0]\u001b[0m 跳过 Lint 检查（未检测到 Lint 配置）"
+      ],
+      "executedAt": "2026-04-22T04:57:16.736Z"
+    },
+    "gate1": {
+      "status": "completed",
+      "passed": true,
+      "checks": [
+        "[",
+        "{",
+        "\"name\": \"unit-tests\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：未检测到测试框架\"",
+        "},",
+        "{",
+        "\"name\": \"coverage\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：未检测到测试框架\"",
+        "},",
+        "{",
+        "\"name\": \"e2e-tests\",",
+        "\"passed\": true,",
+        "\"detail\": \"跳过：未检测到测试框架\"",
+        "}",
+        "]",
+        "\u001b[0;34m[GATE1]\u001b[0m Gate 1: 测试门禁",
+        "\u001b[0;34m[GATE1]\u001b[0m ========================",
+        "\u001b[0;34m[GATE1]\u001b[0m 未检测到测试框架，跳过测试门禁"
+      ],
+      "executedAt": "2026-04-22T04:57:16.918Z"
+    },
+    "gate2": {
+      "status": "pending",
+      "passed": null,
+      "checks": [],
+      "executedAt": null
+    }
+  },
+  "metrics": {
+    "totalDuration": 13144,
+    "stageTimings": {
+      "1": 829,
+      "2": 3378,
+      "3": 1527
+    },
+    "gatePassRate": 100,
+    "retryTotal": 0,
+    "agentSuccessCount": 0,
+    "agentFailureCount": 0,
+    "meanRetriesPerStage": 0,
+    "revisionLoopCount": 0,
+    "pluginFailureCount": 0
+  },
+  "plugins": [],
+  "pluginLifecycle": {
+    "discovered": [],
+    "activated": [],
+    "executed": [],
+    "failed": []
+  },
+  "humanInterventions": [],
+  "revisionRequests": [],
+  "feedbackLoops": {
+    "maxRounds": 2,
+    "currentRound": 0
+  }
+}

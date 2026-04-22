@@ -1,0 +1,22 @@
+{
+  "feature": "lina-perfume-portfolio",
+  "generatedAt": "2026-04-22T05:58:12.882Z",
+  "startupSummary": [
+    {
+      "category": "stable_decision",
+      "scope": "feature",
+      "summary": "Stable completion with roles=full pack=default"
+    },
+    {
+      "category": "stable_decision",
+      "scope": "feature",
+      "summary": "Stable completion with roles=full pack=default"
+    },
+    {
+      "category": "stable_decision",
+      "scope": "feature",
+      "summary": "Stable completion with roles=full pack=default"
+    }
+  ],
+  "agentSections": {}
+}

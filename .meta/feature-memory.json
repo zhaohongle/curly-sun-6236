@@ -1,0 +1,168 @@
+{
+  "feature": "lina-perfume-portfolio",
+  "records": [
+    {
+      "influence": "preference",
+      "tags": [
+        "full"
+      ],
+      "id": "stable-6",
+      "scope": "feature",
+      "kind": "long_term",
+      "category": "stable_decision",
+      "feature": "lina-perfume-portfolio",
+      "stage": 1,
+      "agent": null,
+      "summary": "Stable completion with roles=full pack=default",
+      "source": {
+        "type": "execution-parameters",
+        "window": "latest"
+      },
+      "evidence": [
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        },
+        {
+          "type": "event",
+          "ref": "6"
+        }
+      ],
+      "confidence": 0.7,
+      "createdAt": "2026-04-22T02:35:14.404Z",
+      "lastSeenAt": "2026-04-22T02:35:14.404Z",
+      "expiresAt": null,
+      "decayScore": 7
+    },
+    {
+      "influence": "preference",
+      "tags": [
+        "full"
+      ],
+      "id": "stable-10",
+      "scope": "feature",
+      "kind": "long_term",
+      "category": "stable_decision",
+      "feature": "lina-perfume-portfolio",
+      "stage": 2,
+      "agent": null,
+      "summary": "Stable completion with roles=full pack=default",
+      "source": {
+        "type": "execution-parameters",
+        "window": "latest"
+      },
+      "evidence": [
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        },
+        {
+          "type": "event",
+          "ref": "10"
+        }
+      ],
+      "confidence": 0.7,
+      "createdAt": "2026-04-22T03:35:26.782Z",
+      "lastSeenAt": "2026-04-22T03:35:26.782Z",
+      "expiresAt": null,
+      "decayScore": 7
+    },
+    {
+      "influence": "preference",
+      "tags": [
+        "full"
+      ],
+      "id": "stable-16",
+      "scope": "feature",
+      "kind": "long_term",
+      "category": "stable_decision",
+      "feature": "lina-perfume-portfolio",
+      "stage": 3,
+      "agent": null,
+      "summary": "Stable completion with roles=full pack=default",
+      "source": {
+        "type": "execution-parameters",
+        "window": "latest"
+      },
+      "evidence": [
+        {
+          "type": "event",
+          "ref": "16"
+        },
+        {
+          "type": "event",
+          "ref": "16"
+        }
+      ],
+      "confidence": 0.7,
+      "createdAt": "2026-04-22T04:57:32.946Z",
+      "lastSeenAt": "2026-04-22T04:57:32.946Z",
+      "expiresAt": null,
+      "decayScore": 7
+    }
+  ]
+}

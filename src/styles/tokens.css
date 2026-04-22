@@ -1,0 +1,28 @@
+/* CSS 自定义属性 — 设计令牌 */
+:root {
+  /* 颜色 */
+  --color-ink: #0A0A0A;
+  --color-cream: #F5F0E8;
+  --color-cinnabar: #C9302C;
+  --color-cinnabar-dark: #8B1A1A;
+
+  /* 字体 */
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-cn-serif: 'Noto Serif SC', Georgia, serif;
+
+  /* 间距 */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 8rem;
+
+  /* 过渡 */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+}
