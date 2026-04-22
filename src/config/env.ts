@@ -14,15 +14,9 @@ export function loadEnv(): EnvConfig {
 
   // 校验 Formspree 端点（非生产环境下仅警告）
   if (!formspreeEndpoint || formspreeEndpoint.includes('your-form-id')) {
-    if (import.meta.env.PROD) {
-      throw new Error(
-        'VITE_FORMSPREE_ENDPOINT is not configured. Set it in your environment variables.',
-      );
-    } else {
-      console.warn(
-        '[ENV] VITE_FORMSPREE_ENDPOINT is not set. Contact form will not work.',
-      );
-    }
+    console.warn(
+      '[ENV] VITE_FORMSPREE_ENDPOINT is not set. Contact form will not work.',
+    );
   }
 
   return {
