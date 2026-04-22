@@ -74,7 +74,7 @@ export default function Hero() {
   // ===== 三级降级渲染 =====
 
   // Hero 底图 URL（Unsplash 免费商用 — 暗色调红色烟雾）
-  const heroBgUrl = 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80';
+  const heroBgUrl = 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=1920&q=80';
 
   // Fallback: CSS 渐变 + CSS animation 模拟烟雾
   if (deviceTier === 'fallback') {
