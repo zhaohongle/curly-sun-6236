@@ -8,7 +8,7 @@ export function AboutImage(): React.ReactNode {
       <div className="about-image-inner relative h-full min-h-[500px]">
         {/* Image with grayscale filter */}
         <img
-          src="/images/about/lina-studio.jpg"
+          src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=800&q=80"
           alt="Lina 的调香工作室 — 京都"
           className="w-full h-full object-cover grayscale"
           loading="lazy"
