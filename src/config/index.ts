@@ -7,7 +7,7 @@ export const works: Work[] = [
     name: '樱时',
     nameEn: 'Sakura Hour',
     description: '京都春樱的刹那与永恒，捕捉樱花飘落瞬间的空气感。',
-    image: '/images/works/sakura.jpg',
+    image: 'https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80',
     notes: {
       top: ['樱花花瓣', '佛手柑', '粉红胡椒'],
       heart: ['白牡丹', '茉莉', '铃兰'],
@@ -20,7 +20,7 @@ export const works: Work[] = [
     name: '墨庭',
     nameEn: 'Ink Garden',
     description: '雨后庭院的苔藓与湿润泥土，墨色深处的静谧。',
-    image: '/images/works/ink.jpg',
+    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80',
     notes: {
       top: ['绿叶', '竹子', '香柠檬'],
       heart: ['鸢尾', '岩兰草', '乌龙茶'],
@@ -33,7 +33,7 @@ export const works: Work[] = [
     name: '宵待',
     nameEn: 'Nightfall',
     description: '黄昏时分的线香余韵，温暖而克制的东方调。',
-    image: '/images/works/nightfall.jpg',
+    image: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800&q=80',
     notes: {
       top: ['藏红花', '豆蔻', '柑橘'],
       heart: ['乳香', '没药', '玫瑰'],
@@ -46,7 +46,7 @@ export const works: Work[] = [
     name: '初霜',
     nameEn: 'First Frost',
     description: '冬日清晨的第一层霜，冷冽中透出暖意。',
-    image: '/images/works/frost.jpg',
+    image: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80',
     notes: {
       top: ['薄荷', '桉树', '杜松'],
       heart: ['白茶', '紫罗兰叶', '鸢尾根'],
@@ -59,7 +59,7 @@ export const works: Work[] = [
     name: '灯下',
     nameEn: 'Under the Lamp',
     description: '深夜书房里的一盏灯，纸墨与旧木的温存气息。',
-    image: '/images/works/lamp.jpg',
+    image: 'https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=800&q=80',
     notes: {
       top: ['纸莎草', '柠檬', '小豆蔻'],
       heart: ['旧书页', '蜂蜡', '干花'],
@@ -72,7 +72,7 @@ export const works: Work[] = [
     name: '水无月',
     nameEn: 'Minazuki',
     description: '六月无水的干涸河床，阳光炙烤石头的矿物感。',
-    image: '/images/works/minazuki.jpg',
+    image: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800&q=80',
     notes: {
       top: ['矿物', '臭氧', '青柠'],
       heart: ['睡莲', '荷花', '水生调'],
