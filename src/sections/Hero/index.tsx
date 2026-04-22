@@ -74,7 +74,7 @@ export default function Hero() {
   // ===== 三级降级渲染 =====
 
   // Hero 底图 URL（Unsplash 免费商用 — 暗色调红色烟雾）
-  const heroBgUrl = 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=1920&q=80';
+  const heroBgUrl = './images/hero-bg.jpg';
 
   // Fallback: CSS 渐变 + CSS animation 模拟烟雾
   if (deviceTier === 'fallback') {
@@ -91,7 +91,7 @@ export default function Hero() {
             backgroundImage: `url(${heroBgUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.15,
+            opacity: 0.08,
           }}
         />
         {/* CSS 烟雾模拟 */}
@@ -148,7 +148,7 @@ export default function Hero() {
           backgroundImage: `url(${heroBgUrl})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.12,
+          opacity: 0.06,
         }}
       />
 
