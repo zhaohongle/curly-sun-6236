@@ -68,7 +68,7 @@ export function useFormSubmission() {
       setStatus('submitting');
 
       try {
-        const response = await fetch(env.formspreeEndpoint, {
+        const response = await fetch(env.contactEndpoint, {
           method: 'POST',
           headers: {
             Accept: 'application/json',
@@ -77,8 +77,10 @@ export function useFormSubmission() {
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
+            _subject: `[Lina Perfume] ${formData.inquiryType} — ${formData.name}`,
             inquiryType: formData.inquiryType,
             message: formData.message,
+            _template: 'table',
           }),
         });
 
